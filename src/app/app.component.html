@@ -1,1 +1,13 @@
-<button mat-flat-button>Click Aqui!</button>
+<mat-toolbar color="primary">
+  <span>Cadastro do Cliente</span>
+  <span class="spacer"></span>
+  <a routerLink="/cadastro">
+    <mat-icon fontIcon="feed"></mat-icon>
+    Cadastro
+  </a>
+  <a routerLink="/consulta">
+    <mat-icon fontIcon="search"></mat-icon>
+    Consulta
+  </a>
+</mat-toolbar>
+<router-outlet></router-outlet>
