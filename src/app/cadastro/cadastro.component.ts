@@ -25,5 +25,6 @@ export class CadastroComponent {
 
   salvar() {
     this.service.salvar(this.cliente);
+    console.log("Cliente Salvo!");
   }
 }
