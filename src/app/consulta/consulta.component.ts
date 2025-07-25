@@ -18,6 +18,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ConsultaComponent {
 
+  nomeBusca: string = '';
   listaCliente: Cliente[] = [];
   colunasTable: string[] = ["id", "nome", "cpf", "dataNascimento", "email"]
 
@@ -29,6 +30,10 @@ export class ConsultaComponent {
     console.log("passando por aqui!");
 
     this.listaCliente = this.service.pesquisarClientes('');
+  }
+
+  pesquisar() {
+    this.listaCliente = this.service.pesquisarClientes(this.nomeBusca)
   }
 
 }
