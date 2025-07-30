@@ -26,9 +26,7 @@ export class ConsultaComponent {
   constructor(
     private service: ClienteService,
     private router: Router
-  ) {
-
-  }
+  ) { }
 
   ngOnInit() {
     console.log("passando por aqui!");
