@@ -31,8 +31,6 @@ export class ConsultaComponent {
   ) { }
 
   ngOnInit() {
-    console.log("passando por aqui!");
-
     this.listaCliente = this.service.pesquisarClientes('');
   }
 
